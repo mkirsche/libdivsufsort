@@ -138,10 +138,6 @@ main(int argc, const char *argv[]) {
       perror(NULL);
       exit(EXIT_FAILURE);
     }
-    if(0x7fffffff <= n) {
-      fprintf(stderr, "%s: Input file `%s' is too big.\n", argv[0], fname);
-      exit(EXIT_FAILURE);
-    }
   } else {
     fprintf(stderr, "%s: Cannot fseek `%s': ", argv[0], fname);
     perror(NULL);
